@@ -1,0 +1,185 @@
+
+@font-face{
+    font-family:retrocool ;
+    src: url(fonts/RetroCool-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar{
+    height: 90px;
+    background-color:bisque;
+    box-shadow: 0 0 5px gray !important;
+}
+.navbar-brand img{
+    height: 70px;
+}
+.navbar-brand span{
+    color: black;
+    font-family: retrocool;
+    font-size: 50px;
+}
+.nav-link{
+    color: black !important;
+    font-size: 20px;
+}
+.jumbotron{
+    height:calc(100vh - 90px);
+    width: 100%;
+    background-image:url(img/baloon2.jpg);
+    background-size: cover;
+    background-position:center ;
+    text-shadow: 0 0 5 gray;
+    text-align: center;
+}
+.principal{
+    font-family: retrocool;
+    font-size: 400%;
+}
+.sn{
+    font-family: retrocool;
+    font-size: 900%;
+}
+h2{
+    background-color: bisque;
+    font-size: 30px;
+    margin: 0;
+}
+.items{
+    /*height: 900px;*/
+    background-image: url(img/fondio\ beige.jpg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 800px);
+}
+.item{
+    border: 3px solid black;
+    margin: 15px;
+    line-height: 700px;
+    text-shadow: gray;
+    text-align: center;
+}
+.item1{
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+}
+.item2{
+    background-image: url(img/2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+}
+.item3{
+    background-image: url(img/3.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+text-align: center;
+font-size: 30px;
+}
+footer i{
+    padding: 20px;
+    font-size: 30px
+}
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color:black;
+    color: white;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 10pxpx;
+    box-shadow: 0 0 5px gray;
+    
+}
+
+.fondo{
+    height: calc(100vh - 90px);
+    background-image:url(img/baloon2.jpg);
+    background-size: cover;
+    background-position:center ;
+    text-shadow: 0 0 5 gray;
+    text-align: center;
+    padding: 100px;
+}
+
+.nosotros{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr) ;
+    grid-template-rows: repeat(2);
+    width:60%;
+    margin: 0 auto;
+    background-image: url(img/fondio\ beige.jpg);
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.caja{
+    border: 4px solid black;
+    background-color: gray;
+    text-align: center;
+    float: center;
+}
+.c1{
+font-size: 5PX;
+}
+.c2{
+    height: 300px;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width:0) and (max-width:767px) {
+    .navbar-collapse{
+        background-color: bisque ;
+        display: flex;
+        justify-content: center !important;
+    }
+    .navbar{
+        height: 80px;
+        background-color:bisque;
+        box-shadow: 0 0 5px gray !important;
+    }
+    .navbar-brand img{
+        height: 60px;
+    }
+    .navbar-brand span{
+        color: black;
+        font-family: retrocool;
+        font-size: 40px;
+    }
+    .jumbotron{
+        height: 600px;
+        text-align: center;
+    }
+h2 marquee{
+    font-size: 20px;
+    }
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:repeat(3, 300px);
+    }
+    .item{
+        line-height: 190px;
+    }
+    .nosotros h1{
+        font-size: 50px;
+    }
+    .c2{
+        height: 150pxS;
+    }
+}
